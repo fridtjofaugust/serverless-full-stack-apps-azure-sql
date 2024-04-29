@@ -1,6 +1,6 @@
 # 2. Deploy Azure Function
 # Get resource group and location and random string
-$resourceGroupName = "Sandbox resource group name"
+$resourceGroupName = "test"
 $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like $resourceGroupName
 $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
 $location = $resourceGroup.Location
